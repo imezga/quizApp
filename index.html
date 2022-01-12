@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Codedamn - Quiz Project</title>
+</head>
+
+<body>
+    <header>
+        <a id=leaderboard>View Highscores <i class="fas fa-hand-point-left fa-lg"></i>
+        </i></a>
+        <div id="time">Time: 50</div>
+
+    </header>
+    <main>
+
+        <!-- Highscores -->
+        <div id="highscores" class="border">
+            <h1 id="highscore-heading">Highscores</h1>
+            <div id="highscore-status">No highscores yet!</div>
+            <div class="buttons">
+                <button class="btn" id="go-back">Go Back</button>
+                <button class="btn" id="clear">Clear Highscores</button>
+            </div>
+        </div>
+        <!-- Highscores -->
+
+        <!-- Quiz Intro -->
+        <div id="quiz-intro" class="border" style="display: flex;">
+            <h1 id="quiz-heading">Coding Quiz Challenge</h1>
+            <p>Try to answer to following code-releated questions within the time limit.</p>
+
+            <p>Keep in mind that incorrect answer will penalize your score/time by ten seconds!</p>
+            <button id="start-quiz" class="btn">Start Quit</button>
+        </div>
+        <!-- Quiz Intro -->
+
+        <!-- Quiz -->
+        <div  id="quiz" class="border">
+            <h1 id="question"></h1>
+            <div class="options">
+                <button class="btn option-btn"></button>
+                <button class="btn option-btn"></button>
+                <button class="btn option-btn"></button>
+                <button class="btn option-btn"></button>
+            </div>
+            <div class="answer-wrapper">
+                <hr>
+                <p id="answer"></p>
+            </div>
+        </div>
+        <!-- Quiz -->
+
+        <!-- Quiz End -->
+        <div id="quiz-end" class="border">
+            <h1>All done!</h1>
+            <p>Your final score is <span id="answer-number"></span>.</p>
+            <div class="submit-highscore-wrapper">
+                <label for="initials">Enter initials</label>
+                <input type="text" name="initials">
+                <button class="btn submit-btn">Submit</button>
+                <p id="enter">Enter initials!</p>
+            </div>
+        </div>
+        <!-- Quiz End -->
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
